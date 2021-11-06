@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                background-color: cadetblue;
+                transition: background-color 2s;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box"></div> 
+        <br>
+        <button onclick="func()">click</button>
+        <script>
+            document.getElementById('btn').addEventListener('click', function(){
+                document.getElementsByClassName('box')[0].style='background-color:green;';
+
+            });
+        </script>
+    </body>  
+</html>  
