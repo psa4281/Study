@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <button id="btn" onclick="func('tab1')"> tab1  </button>
+        <button id="btn" onclick="func('tab2')"> tab2  </button>
+        <button id="btn" onclick="func('tab3')"> tab3  </button>
+
+        <div id="tab1"  >
+            <h1>This is tab 1</h1>
+        </div>
+
+        <div id="tab2" style="display: none;">
+            <h1>This is tab 2</h1>
+        </div>
+
+        <div id="tab3" style="display: none;">
+            <h1>This is tab 3</h1>
+        </div>
+
+        <script>
+            function func(tab){
+               document.getElementById('tab1').style="display: none;"
+               document.getElementById('tab2').style="display: none;"
+               document.getElementById('tab3').style="display: none;"
+               document.getElementById(tab).style=""
+               console.log(tab,document.getElementById(tab))
+            }
+        </script>
+         
+    </body>
+</html> 

@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <button id="btn" onclick="left()">&lt;</button>
+        <button id="btn" onclick="right()">&gt;</button>
+        <img id="img" src="https://cdn.pixabay.com/photo/2021/10/23/03/35/mountain-6734031__340.jpg">
+        <script>
+            var num = 2;
+            var a={
+                1: "https://cdn.pixabay.com/photo/2021/11/05/12/27/woman-6771288__340.jpg",
+                2: "https://cdn.pixabay.com/photo/2021/10/23/03/35/mountain-6734031__340.jpg",
+                3: "https://cdn.pixabay.com/photo/2021/11/08/11/19/buildings-6778915__340.jpg"
+            }
+            function left(){
+                if(num==1){
+                    return
+                }
+                num--
+                document.getElementById('img').src=a[num]
+
+
+            }
+            function right(){
+                if(num==3){
+                     return
+                 }
+                num++
+                 document.getElementById('img').src=a[num]
+                 
+            }
+        </script>
+    </body>
+</html> 
